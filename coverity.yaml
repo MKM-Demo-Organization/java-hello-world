@@ -4,5 +4,6 @@ capture:
     build-command: mvn -B -DskipTests package
 analyze:
   checkers:
+    all: true
     webapp-security:
       enabled: true
