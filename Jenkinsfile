@@ -20,7 +20,7 @@ pipeline {
                       polaris_assessment_types: 'SAST', 
                       polaris_reports_sarif_create: true, 
                       polaris_reports_sarif_file_path: 'polaris.results.json', 
-                      polaris_reports_sarif_groupSCAIssues: true, 
+                      polaris_reports_sarif_groupSCAIssues: false, 
                       include_diagnostics: true
             }
         }
