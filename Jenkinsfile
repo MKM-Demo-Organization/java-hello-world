@@ -1,7 +1,7 @@
 def BRANCH = 'main'
 
 pipeline {
-    //agent { label 'linux64' }
+    agent { label 'local' }
     tools {
         maven 'MVN-3-LOCAL'
         jdk 'JDK-17'
