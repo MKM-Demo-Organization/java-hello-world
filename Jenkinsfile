@@ -21,14 +21,14 @@ pipeline {
                       polaris_reports_sarif_create: true, 
                       polaris_reports_sarif_file_path: 'polaris.results.json', 
                       polaris_reports_sarif_groupSCAIssues: false, 
-                      include_diagnostics: true
+                      include_diagnostics: false
             }
         }
     }
     post {
         always {
             archiveArtifacts artifacts: 'polaris.results.json, ".bridge/Polaris Coverity Capture/idir/build-log.txt", ".bridge/Polaris Coverity Capture/idir/capture-files-log.txt"'
-            cleanWs()
+            //cleanWs()
         }
     }
 }
