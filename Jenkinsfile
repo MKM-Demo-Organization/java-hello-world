@@ -27,7 +27,7 @@ pipeline {
     }
     post {
         always {
-            archiveArtifacts artifacts: '.synopsys/polaris/configuration/synopsys.yml, .synopsys/polaris/data/coverity/*/idir/build-log.txt'
+            archiveArtifacts artifacts: 'polaris.results.json, ".bridge\Polaris Coverity Capture\idir\build-log.txt", ".bridge\Polaris Coverity Capture\idir\capture-files-log.txt"'
             cleanWs()
         }
     }
