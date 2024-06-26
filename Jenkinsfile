@@ -15,6 +15,7 @@ pipeline {
         }
         stage('polaris') {
             steps {
+                echo bat(returnStdout: true, script: 'set')
                 synopsys_scan product: 'polaris',
                       polaris_application_name: 'MKM-Demo', 
                       polaris_assessment_types: 'SAST', 
