@@ -4,7 +4,7 @@ pipeline {
     agent { label 'local' }
     tools {
         maven 'MVN-3-LOCAL'
-        jdk 'JDK-17'
+        jdk 'JDK-11'
     }
     stages {
         stage('checkout') {
