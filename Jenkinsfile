@@ -27,7 +27,7 @@ pipeline {
     }
     post {
         always {
-            archiveArtifacts artifacts: 'polaris.results.json, ".bridge\Polaris Coverity Capture\idir\build-log.txt", ".bridge\Polaris Coverity Capture\idir\capture-files-log.txt"'
+            archiveArtifacts artifacts: 'polaris.results.json, ".bridge/Polaris Coverity Capture/idir/build-log.txt", ".bridge/Polaris Coverity Capture/idir/capture-files-log.txt"'
             cleanWs()
         }
     }
